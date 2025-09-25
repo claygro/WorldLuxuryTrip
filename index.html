@@ -11,8 +11,25 @@
     <!-- for aos library -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css" />
+    <!-- for emailjs -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "eVZqz5tndwrv_XNrV",
+        });
+      })();
+    </script>
   </head>
   <body>
+    <!-- Loader -->
+    <div id="loader" class="loader-center">
+      <div class="loader-spinner"></div>
+      <p>Loading Luxury Experience...</p>
+    </div>
     <!-- Header -->
     <header data-aos="fade-down" data-aos-duration="1000">
       <nav>
